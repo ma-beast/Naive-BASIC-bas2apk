@@ -1,3 +1,5 @@
+![Naive BASIC bas2apk — retro computing workshop](docs/images/Naive-BASIC-bas2apk-banner.png)
+
 # Naive BASIC bas2apk 1.0
 
 **BASIC → standalone Android APK, directly on Android.**
