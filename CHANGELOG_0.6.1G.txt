@@ -1,0 +1,1 @@
+NaiveWORK BAS-APK-MAKER 0.6.1G\n\nИзменение: файловый браузер теперь стартует с Environment.getExternalStorageDirectory(), то есть с внешнего хранилища/SD-карты, вместо несуществующего /files/mnt.\nСистемный выбор файлов по-прежнему не используется.\nВерсия 0.6.1G, versionCode 6.\n

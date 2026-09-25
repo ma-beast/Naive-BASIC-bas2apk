@@ -1,0 +1,23 @@
+NaiveWORK 0.2G — дневник разработки
+
+База: NaiveBASIC 0.9.3G-BETA.
+
+Ключевое решение:
+NaiveWORK 0.2G сделан не из NaiveWORK 0.1G и не через изменение готового APK. За основу взяты исходники NaiveBASIC 0.9.3G-BETA.
+
+BasicInterpreter.java — точная копия файла из NaiveBASIC 0.9.3G-BETA.
+BasicScreenView.java — точная копия файла из NaiveBASIC 0.9.3G-BETA.
+
+Обвязка NaiveWORK содержит только автономный запуск встроенного assets/programs/program.bas и реализацию ScreenProvider/InputStateProvider.
+
+При каждом запуске создаётся новый BasicInterpreter(MainActivity.this).
+Состояние BASIC не сохраняется между запусками.
+Старый NaiveWORK 0.1G и его исходники в качестве основы не используются.
+
+Версия: 0.2G
+versionCode: 2
+
+0.2G-FIXED3 — АВТОРЫ ПОСЛЕ ЗАВЕРШЕНИЯ
+- После завершения встроенной BASIC-программы NaiveWORK автоматически показывает страницу «Авторы».
+- Страница использует оформление NaiveBASIC 0.9.3G-BETA: NecronomicOS, Naive BASIC, ChatGPT + Mikhail G. Freeman (ma_beast), кофе и 4PDA.
+- Интерпретатор BasicInterpreter.java и BasicScreenView.java не изменялись.

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.naivework.BasicScreenView android:id="@+id/run_screen" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#000000" />
+    <LinearLayout android:id="@+id/about_screen" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center_horizontal" android:visibility="gone" android:padding="8dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="NecronomicOS" android:textColor="#FF0000" android:textSize="28sp" android:textStyle="bold" android:paddingTop="12dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="Naive BASIC bas2apk" android:textColor="#FFFF00" android:textSize="20sp" android:textStyle="bold" android:paddingTop="6dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="ChatGPT + Mikhail G. Freeman (ma_beast)" android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold" android:paddingTop="12dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="12dp" android:paddingBottom="20dp">
+            <ImageButton android:id="@+id/coffee_link" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/coffee_laptop" android:background="@android:color/transparent" android:contentDescription="Страница автора" android:scaleType="fitCenter" android:padding="0dp" android:layout_marginBottom="6dp" />
+            <Button android:id="@+id/pda_link" android:layout_width="180dp" android:layout_height="wrap_content" android:text=" 4PDA" android:textColor="#66B7E8" android:textSize="20sp" android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

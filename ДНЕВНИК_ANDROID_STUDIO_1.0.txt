@@ -1,0 +1,24 @@
+Naive BASIC bas2apk 1.0 — дневник Android Studio
+
+База: пользовательский проект 0.8G с новым NaiveWORK 0.2G и новыми иконками.
+
+Цель версии 1.0:
+сохранить проверенную механику выбора BAS, уникальных package id и V1/JAR-подписи, но перевести шаблон на NaiveWORK 0.2G и официальное название «Naive BASIC bas2apk».
+
+Исправление:
+новый NaiveWORK 0.2G хранит android:label в AndroidManifest.xml как ссылку на ресурс. Старый BinaryXmlLabel ожидал буквальную строку «Naive WORK» в string pool, поэтому новый шаблон несовместим со старой заменой имени. BinaryXmlLabel переписан локально: старые индексы string pool сохраняются, имя программы добавляется новой строкой, атрибут application/android:label переключается на TYPE_STRING с индексом этой строки. Package com.naivework заменяется как и прежде.
+
+Проверки:
+- Встроенный шаблон действительно имеет versionName 0.2G и package com.naivework.
+- В его manifest исходный application label имеет тип REFERENCE, что подтверждает причину несовместимости старого кода.
+- После исправления тестовый manifest получает package com.naivework.test0game и label «Тест Игра» как TYPE_STRING.
+- export_private.pk8 и export_cert.der успешно читаются и имеют одинаковый RSA public key.
+- Тестовая обработка NaiveWORK_0.2G.apk заменяет program.bas и формирует V1-подписанный APK.
+
+Не менялось:
+- minSdk 9 / targetSdk 10;
+- файловый браузер;
+- алгоритм формирования уникального package id;
+- формат V1/JAR-подписи;
+- пользовательские иконки;
+- сам NaiveWORK 0.2G как бинарный шаблон, кроме штатных изменений manifest/program.bas при экспорте.

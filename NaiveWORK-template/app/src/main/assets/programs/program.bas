@@ -1,0 +1,2 @@
+10 PRINT "NaiveWORK"
+20 END

@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.naivework.basapkmaker">
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="10" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:label="Naive BASIC bas2apk" android:icon="@drawable/naive_basic_icon" android:theme="@style/AppTheme" android:allowBackup="false">
+        <activity android:name=".MainActivity" android:label="Naive BASIC bas2apk">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

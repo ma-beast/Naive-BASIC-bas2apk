@@ -1,0 +1,8 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.naivework.basapkmaker'
+    compileSdk 35
+    defaultConfig { applicationId "com.naivework.basapkmaker"; minSdk 9; targetSdk 10; versionCode 10; versionName "1.0" }
+    lint { disable += "ExpiredTargetSdkVersion" }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}

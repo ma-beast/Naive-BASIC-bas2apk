@@ -1,0 +1,25 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.naivework'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.naivework"
+        minSdk 9
+        targetSdk 10
+        versionCode 2
+        versionName "0.2G"
+    }
+
+    lint {
+        disable += "ExpiredTargetSdkVersion"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
